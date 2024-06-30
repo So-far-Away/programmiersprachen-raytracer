@@ -1,8 +1,9 @@
 #define CATCH_CONFIG_RUNNER
 #include <catch.hpp>
 #include "shape.hpp"
+#include "box.hpp"
+#include "sphere.hpp"
 #include "../build/framework/box.hpp"
-#include "../build/framework/sphere.hpp"
 
 // Tests for Sphere
 TEST_CASE("Sphere calculates area and volume correctly", "[Sphere]") {
