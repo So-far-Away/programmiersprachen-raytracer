@@ -2,8 +2,9 @@
 #define SPHERE_H
 
 #include "shape.hpp"
+#include "hitpoint.hpp"
+#include "ray.hpp"
 #include <glm/vec3.hpp>
-#include <corecrt_math_defines.h>
 
 class Sphere : public Shape {
 public:
@@ -12,6 +13,8 @@ public:
     double area() const override;
     double volume() const override;
     std::ostream& print(std::ostream& os) const override;
+
+    HitPoint intersect(const Ray& ray) const;
 
 private:
     glm::vec3 center_;

@@ -15,7 +15,7 @@ public:
     virtual double area() const = 0;
     virtual double volume() const = 0;
 
-    virtual std::ostream& print(std::ostream& os) const;
+    virtual std::ostream& print(std::ostream& os) const = 0;
 
     friend std::ostream& operator<<(std::ostream& os, const Shape& s);
 };

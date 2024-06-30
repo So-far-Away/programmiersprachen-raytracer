@@ -1,4 +1,3 @@
-// Shape.cpp
 #include "Shape.hpp"
 
 Shape::Shape(const std::string& name, const std::string& color) : name_(name), color_(color) {}
